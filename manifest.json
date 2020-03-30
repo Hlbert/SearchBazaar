@@ -1,0 +1,37 @@
+﻿{
+    "manifest_version": 2,
+    "name": "search bazaar",
+    "description": "A chrome extension which allows searching keywords with serveral search engines at the same time.",
+    "version": "0.0.1",
+    "chrome_url_overrides": {
+        "newtab": "main.html"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "http://*/*?from=searchbazaar&*",
+            "https://*/*?from=searchbazaar&*"
+        ],
+        "js": [
+            "engines.js",
+            "content.js"
+        ],
+        "run_at": "document_start"
+    }],
+    "page_action": {
+        "default_icon": {
+            "16": "assets/newtab_search16.png",
+            "32": "assets/newtab_search32.png"
+        }
+    },
+    "icons": {
+        "16": "assets/newtab_search16.png",
+        "32": "assets/newtab_search32.png",
+        "48": "assets/newtab_search48.png",
+        "128": "assets/newtab_search128.png"
+    }
+}
