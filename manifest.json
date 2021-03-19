@@ -17,8 +17,7 @@
             "https://*/*?from=searchbazaar&*"
         ],
         "js": [
-            "engines.js",
-            "content.js"
+            "engines.js"
         ],
         "run_at": "document_start"
     }],

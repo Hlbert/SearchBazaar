@@ -37,7 +37,7 @@ var search = function() {
     });
 
     if (!selectedEngines.length) {
-        selectedEngines.push("百度");
+        selectedEngines.push("Google");
     }
 
     searchWithEngines(keyword, selectedEngines);
