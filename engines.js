@@ -140,7 +140,6 @@ var searchWithEngines = function(keyword, engines) {
         var engine = getEngine(engines[i]);
         if (engine) {
             var url = engine.url(keyword);
-            url += '&from=searchbazaar';
             window.open(url, engine.name);
         }
     }
