@@ -59,7 +59,7 @@ var engines = [{
         }, {
             name: 'epubee',
             url: function(keyword) {
-                return 'http://cn.epubee.com/files.aspx?skeyinput=' + keyword;
+                return 'http://www.obook.vip/files.aspx?skeyinput=' + keyword;
             }
         }, {
             name: '豆瓣电影',
