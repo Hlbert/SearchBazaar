@@ -7,20 +7,8 @@
         "newtab": "main.html"
     },
     "permissions": [
-        "tabs",
-        "http://*/*",
-        "https://*/*"
+        "tabs"
     ],
-    "content_scripts": [{
-        "matches": [
-            "http://*/*?from=searchbazaar&*",
-            "https://*/*?from=searchbazaar&*"
-        ],
-        "js": [
-            "engines.js"
-        ],
-        "run_at": "document_start"
-    }],
     "page_action": {
         "default_icon": {
             "16": "assets/newtab_search16.png",
